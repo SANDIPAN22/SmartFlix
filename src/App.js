@@ -1,8 +1,20 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { lazy, Suspense } from "react";
+const LoginPage = lazy(() => import("./Pages/LoginPage"));
+const HomePage = lazy(() => import("./Pages/HomePage"));
+const FlixBotPage = lazy(() => import("./Pages/FlixBotPage"));
+
 const App = () => {
   return (
-    <div className="flex justify-center items-center border-2 border-red-700 w-screen h-screen">
-      <h1 className="text-5xl text-red-200"> Hello World</h1>;
-    </div>
+    <Suspense fallback="<h1> Loading The Page !! Please Hang On !!</h1>">
+      <Router>
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/bot" element={<FlixBotPage />} />
+        </Routes>
+      </Router>
+    </Suspense>
   );
 };
 
