@@ -1,7 +1,7 @@
-
+import { Link } from "react-router-dom"
 const FlixBotPage = () => {
   return (
-    <div>FlixBotPage</div>
+    <Link to="/">go</Link>
   )
 }
 

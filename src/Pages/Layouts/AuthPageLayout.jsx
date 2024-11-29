@@ -1,6 +1,4 @@
-import LoginForm from "../components/LoginForm"
-
-
+import { Outlet } from "react-router-dom"
 const LoginPage = () => {
   return (
     <>  <div className="background-image w-screen h-screen bg-no-repeat bg-cover  bg-fixed   "
@@ -11,7 +9,7 @@ const LoginPage = () => {
         <img className="absolute || md:w-56 md:ml-56" src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="logo" />
         
         <div className="flex justify-center items-center  w-full h-full">
-            <LoginForm/>
+            <Outlet/>
         </div>
 
             
