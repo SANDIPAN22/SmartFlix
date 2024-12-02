@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
-
+import Loader from "./components/Loader";
 const AuthPageLayout = lazy(() => import("./Pages/Layouts/AuthPageLayout"));
 const ProtectedPageLayout = lazy(() =>
   import("./Pages/Layouts/ProtectedPageLayout")
@@ -12,7 +12,7 @@ const SignUpPage = lazy(() => import("./components/SignUpForm"));
 
 const App = () => {
   return (
-    <Suspense fallback="<h1> Loading The Page !! Please Hang On !!</h1>">
+    <Suspense fallback={<Loader />}>
       <Router>
         <Routes>
           <Route element={<ProtectedPageLayout />}>

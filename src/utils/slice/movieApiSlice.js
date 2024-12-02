@@ -13,7 +13,6 @@ export const movieApiSlice = createApi({
     },
   }),
   tagTypes: ["Movies"],
-  // keepUnusedDataFor: 5,
 
   endpoints: (builder) => ({
     getNowPlayingMovies: builder.query({
@@ -21,9 +20,38 @@ export const movieApiSlice = createApi({
         url: "/now_playing",
       }),
       providesTags: ["Movies"],
-      // keepUnusedDataFor: 5,
+    }),
+    getMovieTrailer: builder.query({
+      query: (movieId) => ({
+        url: `${movieId}/videos`,
+      }),
+      providesTags: ["Movies"],
+    }),
+    getPopularMovies: builder.query({
+      query: () => ({
+        url: "/popular",
+      }),
+      providesTags: ["Movies"],
+    }),
+    getTopRatedMovies: builder.query({
+      query: () => ({
+        url: "/top_rated",
+      }),
+      providesTags: ["Movies"],
+    }),
+    getUpComingMovies: builder.query({
+      query: () => ({
+        url: "/upcoming",
+      }),
+      providesTags: ["Movies"],
     }),
   }),
 });
 
-export const { useGetNowPlayingMoviesQuery } = movieApiSlice;
+export const {
+  useGetNowPlayingMoviesQuery,
+  useGetMovieTrailerQuery,
+  useGetUpComingMoviesQuery,
+  useGetTopRatedMoviesQuery,
+  useGetPopularMoviesQuery,
+} = movieApiSlice;
