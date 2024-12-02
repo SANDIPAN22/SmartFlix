@@ -8,7 +8,7 @@ const NavBar = () => {
   const {user : currentUser, isLoading : userLoading, error : userError} = useSelector((state)=> state.userData)
   const userObj = JSON.parse(currentUser)
   return (
-    <div className="absolute bg-gradient-to-b from-black via-black flex justify-between z-10 || h-8 w-full || md:h-24 ">
+    <div className="fixed bg-gradient-to-b from-black via-black flex justify-between z-20 || h-8 w-full || md:h-24 ">
         <div className="logo  flex items-center">
             <img className="w-20  || md:ml-20 md:w-44" src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="logo" />
 
