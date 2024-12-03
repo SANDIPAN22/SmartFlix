@@ -1,12 +1,24 @@
-import React from 'react'
-import { Link } from "react-router-dom"
+import React, {useState} from 'react'
+import { useNavigate } from "react-router-dom"
 import { FiSearch } from "react-icons/fi";
 import { RiUserSmileLine } from "react-icons/ri";
 import { AiOutlineLogout } from "react-icons/ai";
 import {useSelector, useDispatch} from "react-redux"
+import SearchModal from './SearchModal';
+import { deleteCookie } from '../utils/cookie';
+
 const NavBar = () => {
   const {user : currentUser, isLoading : userLoading, error : userError} = useSelector((state)=> state.userData)
   const userObj = JSON.parse(currentUser)
+  const navigate = useNavigate()
+  const [modal, setModal] = useState(false)
+
+  const logout = () => {
+    // delete the AT cookie and navigate to the signin page
+    deleteCookie("at")
+    window.location.reload()
+     
+  }
   return (
     <div className="fixed bg-gradient-to-b from-black via-black flex justify-between z-20 || h-8 w-full || md:h-24 ">
         <div className="logo  flex items-center">
@@ -15,11 +27,10 @@ const NavBar = () => {
         </div>
         <div className="tools flex justify-around  items-center  || w-48  || md:w-80 md:mr-24">
          
-        
+          <FiSearch className="text-white || text-1xl || md:text-4xl " onClick={()=> setModal(prev => !prev)}/>
           <div className="text-white || text-1xl || md:text-3xl " >Hi, {userObj.name || userObj.displayName} </div>
-          <FiSearch className="text-white || text-1xl || md:text-4xl " />
-          <AiOutlineLogout className="text-white || text-1xl || md:text-4xl "/>
-
+          <AiOutlineLogout className="text-white || text-1xl || md:text-4xl " onClick={logout}/>
+          {modal && <SearchModal modal={modal} setModal={setModal}/>}
         </div>
       </div>
   )

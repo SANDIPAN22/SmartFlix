@@ -7,7 +7,9 @@ import { useEffect } from "react"
 const LoginForm = () => {
     // if the access token is present then redirect to HOME page || No need of LoginForm
     useEffect(()=>{
+        console.log("💁🏻‍♂️💁🏻‍♂️")
         if(getCookie("at")){
+            console.log("Redirecting to Home Page=======================>", getCookie("at"))
             return navigate("/")
         }
     }, [])

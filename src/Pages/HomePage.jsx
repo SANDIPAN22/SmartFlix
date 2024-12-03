@@ -8,7 +8,7 @@ const HomePage = () => {
 
 
   return (
-    <div className="bg-black scrollbar">
+    <div className="bg-black ">
       <NavBar/>
       <HeroContainer/>
       <SecondaryContainer/>

@@ -27,6 +27,13 @@ export const movieApiSlice = createApi({
       }),
       providesTags: ["Movies"],
     }),
+    getMovieSearch: builder.query({
+      query: (movieQuery) => ({
+        url: `https://api.themoviedb.org/3/search/movie?query=${movieQuery}&include_adult=true`,
+      }),
+      keepUnusedDataFor: 1,
+      providesTags: ["Movies"],
+    }),
     getPopularMovies: builder.query({
       query: () => ({
         url: "/popular",
@@ -54,4 +61,5 @@ export const {
   useGetUpComingMoviesQuery,
   useGetTopRatedMoviesQuery,
   useGetPopularMoviesQuery,
+  useGetMovieSearchQuery,
 } = movieApiSlice;

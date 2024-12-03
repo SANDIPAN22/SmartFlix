@@ -24,7 +24,7 @@ const HeroMovieTrailer = ({movieId}) => {
         <iframe 
           title="Trailer"
           className="w-full aspect-video overflow-hidden"
-          src={`https://www.youtube.com/embed/${trailerKey}?autoplay=1&mute=1&enablejsapi=1&controls=0&showinfo=0&loop=1&rel=0`} 
+          src={`https://www.youtube.com/embed/${trailerKey}?autoplay=1&mute=1&enablejsapi=1&controls=0&showinfo=0&loop=1&rel=0&cc_load_policy=0&iv_load_policy=0`} 
           allow="autoplay" 
           
         ></iframe>
