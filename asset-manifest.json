@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/smartflix/static/css/main.efd8354e.css",
+    "main.js": "/smartflix/static/js/main.9b589c73.js",
+    "static/js/504.e103c484.chunk.js": "/smartflix/static/js/504.e103c484.chunk.js",
+    "static/js/616.e6488528.chunk.js": "/smartflix/static/js/616.e6488528.chunk.js",
+    "static/js/839.6c707de6.chunk.js": "/smartflix/static/js/839.6c707de6.chunk.js",
+    "static/js/148.c4d401cd.chunk.js": "/smartflix/static/js/148.c4d401cd.chunk.js",
+    "static/js/230.b97a1226.chunk.js": "/smartflix/static/js/230.b97a1226.chunk.js",
+    "static/js/53.3770c1e4.chunk.js": "/smartflix/static/js/53.3770c1e4.chunk.js",
+    "static/js/579.6f2bf4a0.chunk.js": "/smartflix/static/js/579.6f2bf4a0.chunk.js",
+    "static/js/56.ffb19111.chunk.js": "/smartflix/static/js/56.ffb19111.chunk.js",
+    "static/js/609.cac4c54c.chunk.js": "/smartflix/static/js/609.cac4c54c.chunk.js",
+    "static/js/759.f50416ac.chunk.js": "/smartflix/static/js/759.f50416ac.chunk.js",
+    "static/js/858.b9eb730c.chunk.js": "/smartflix/static/js/858.b9eb730c.chunk.js",
+    "static/js/565.25478543.chunk.js": "/smartflix/static/js/565.25478543.chunk.js",
+    "index.html": "/smartflix/index.html",
+    "main.efd8354e.css.map": "/smartflix/static/css/main.efd8354e.css.map",
+    "main.9b589c73.js.map": "/smartflix/static/js/main.9b589c73.js.map",
+    "504.e103c484.chunk.js.map": "/smartflix/static/js/504.e103c484.chunk.js.map",
+    "616.e6488528.chunk.js.map": "/smartflix/static/js/616.e6488528.chunk.js.map",
+    "839.6c707de6.chunk.js.map": "/smartflix/static/js/839.6c707de6.chunk.js.map",
+    "148.c4d401cd.chunk.js.map": "/smartflix/static/js/148.c4d401cd.chunk.js.map",
+    "230.b97a1226.chunk.js.map": "/smartflix/static/js/230.b97a1226.chunk.js.map",
+    "53.3770c1e4.chunk.js.map": "/smartflix/static/js/53.3770c1e4.chunk.js.map",
+    "579.6f2bf4a0.chunk.js.map": "/smartflix/static/js/579.6f2bf4a0.chunk.js.map",
+    "56.ffb19111.chunk.js.map": "/smartflix/static/js/56.ffb19111.chunk.js.map",
+    "609.cac4c54c.chunk.js.map": "/smartflix/static/js/609.cac4c54c.chunk.js.map",
+    "759.f50416ac.chunk.js.map": "/smartflix/static/js/759.f50416ac.chunk.js.map",
+    "858.b9eb730c.chunk.js.map": "/smartflix/static/js/858.b9eb730c.chunk.js.map",
+    "565.25478543.chunk.js.map": "/smartflix/static/js/565.25478543.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efd8354e.css",
+    "static/js/main.9b589c73.js"
+  ]
+}

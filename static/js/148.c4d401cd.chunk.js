@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkSmartFlix=self.webpackChunkSmartFlix||[]).push([[148],{148:(e,s,t)=>{t.r(s),t.d(s,{default:()=>r});var a=t(660),l=t(579);const r=()=>(0,l.jsx)(a.N_,{to:"/",children:"go"})}}]);
+//# sourceMappingURL=148.c4d401cd.chunk.js.map
