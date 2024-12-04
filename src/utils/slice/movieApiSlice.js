@@ -16,8 +16,9 @@ export const movieApiSlice = createApi({
 
   endpoints: (builder) => ({
     getNowPlayingMovies: builder.query({
-      query: () => ({
+      query: (page = 1) => ({
         url: "/now_playing",
+        params: { page },
       }),
       providesTags: ["Movies"],
     }),
@@ -35,20 +36,23 @@ export const movieApiSlice = createApi({
       providesTags: ["Movies"],
     }),
     getPopularMovies: builder.query({
-      query: () => ({
+      query: (page = 1) => ({
         url: "/popular",
+        params: { page },
       }),
       providesTags: ["Movies"],
     }),
     getTopRatedMovies: builder.query({
-      query: () => ({
+      query: (page = 1) => ({
         url: "/top_rated",
+        params: { page },
       }),
       providesTags: ["Movies"],
     }),
     getUpComingMovies: builder.query({
-      query: () => ({
+      query: (page = 1) => ({
         url: "/upcoming",
+        params: { page },
       }),
       providesTags: ["Movies"],
     }),
