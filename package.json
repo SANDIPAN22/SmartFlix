@@ -50,6 +50,5 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.15"
-  },
-  "homepage": "https://SANDIPAN22.github.io/SmartFlix"
+  }
 }
