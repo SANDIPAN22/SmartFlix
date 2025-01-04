@@ -26,7 +26,7 @@ const NavBar = () => {
 
         </div>
         <div className="tools flex justify-around  items-center  || w-48  || md:w-[450px] md:mr-20">
-          <SiRobotframework className="text-white || text-1xl || md:text-4xl"  />
+          <SiRobotframework className="text-white || text-1xl || md:text-4xl"  onClick={e=> navigate("/ai")}/>
           <FiSearch className="text-white || text-1xl || md:text-4xl " onClick={()=> setModal(prev => !prev)}/>
           <div className="text-white || text-1xl || md:text-3xl " >Hi, {userObj.name || userObj.displayName} </div>
           <AiOutlineLogout className="text-white || text-1xl || md:text-4xl " onClick={logout}/>
