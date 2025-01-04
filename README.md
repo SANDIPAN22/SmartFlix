@@ -10,7 +10,7 @@
 - Advanced REDUX concepts like, redux-thunk and rtk-query are incorporated into it.
 - 'Debounced Suggestion List', 'Infinite Scrolling' and some other premium UI features are there too.
 - For faster designing Tailwind CSS is used.
-- Backed by Open-AI. (WIP)
+- Backed by Open-AI to search movies based on mood.
 
 ### `npm start`
 

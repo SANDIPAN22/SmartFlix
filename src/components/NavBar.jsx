@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { useNavigate } from "react-router-dom"
 import { FiSearch } from "react-icons/fi";
-import { RiUserSmileLine } from "react-icons/ri";
+import { SiRobotframework } from "react-icons/si";
 import { AiOutlineLogout } from "react-icons/ai";
 import {useSelector, useDispatch} from "react-redux"
 import SearchModal from './SearchModal';
@@ -25,8 +25,8 @@ const NavBar = () => {
             <img className="w-20  || md:ml-20 md:w-44" src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="logo" />
 
         </div>
-        <div className="tools flex justify-around  items-center  || w-48  || md:w-80 md:mr-24">
-         
+        <div className="tools flex justify-around  items-center  || w-48  || md:w-[450px] md:mr-20">
+          <SiRobotframework className="text-white || text-1xl || md:text-4xl"  />
           <FiSearch className="text-white || text-1xl || md:text-4xl " onClick={()=> setModal(prev => !prev)}/>
           <div className="text-white || text-1xl || md:text-3xl " >Hi, {userObj.name || userObj.displayName} </div>
           <AiOutlineLogout className="text-white || text-1xl || md:text-4xl " onClick={logout}/>

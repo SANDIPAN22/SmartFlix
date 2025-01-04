@@ -11,6 +11,7 @@
     "firebase": "^11.0.2",
     "fs": "^0.0.1-security",
     "gh-pages": "^6.2.0",
+    "openai": "^4.77.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.2",
@@ -23,8 +24,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

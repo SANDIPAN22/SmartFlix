@@ -20,10 +20,17 @@ const App = () => {
         <Routes>
           <Route element={<ProtectedPageLayout />}>
             <Route path="/" element={<HomePage />} />
-            <Route path="/ai" element={<FlixBotPage />} />
+
+            <Route element={<AuthPageLayout />}>
+              <Route path="/ai" element={<FlixBotPage />} />
+            </Route>
+
             <Route path="/now_playing" element={<NowPlaying />} />
+
             <Route path="/top_rated" element={<TopRated />} />
+
             <Route path="/top_popular" element={<TopPopular />} />
+
             <Route path="/upcoming" element={<Upcoming />} />
           </Route>
           <Route element={<AuthPageLayout />}>
